@@ -42,9 +42,13 @@ public class BuyerController {
 		Usertype u=uservice.getUsertype(1);
 		Login l=new Login(br.getUsername(),br.getPassword(),u,1);
 		Login saved=lservice.save(l);
-		
-	
-		Buyer b=new Buyer(br.getFirstname(),br.getLastname(),br.getEmail(),br.getAddress(),br.getPhoneno(),br.getAdharno(),saved);
+		Buyer b=new Buyer(br.getFirstname(),br.getLastname(),br.getEmail(),br.getAddress(),br.getPhone(),br.getAdharno(),saved);
 	return bservice.saveBuyer(b);
+	}
+	
+	@GetMapping("/getBuyerWithId")
+	public Buyer getBuyerWithId(@RequestParam("buyerid")int buyerid)
+	{
+		return bservice.getbyId(buyerid);
 	}
 }

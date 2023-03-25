@@ -22,4 +22,9 @@ public class BuyerServices {
 	{
 		return brepo.save(b);
 	}
+	
+	public Buyer getbyId(int buyerid)
+	{
+		return brepo.findById(buyerid).get();
+	}
 }

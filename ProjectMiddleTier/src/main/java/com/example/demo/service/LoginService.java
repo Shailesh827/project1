@@ -38,4 +38,15 @@ public class LoginService {
 	{
 		return lrepo.save(l);
 	}
+	
+	
+	public int updateStatus(int loginid) 
+	{
+		return lrepo.updateStatus(loginid);
+	}
+	
+	public int reject(int loginid) 
+	{
+		return lrepo.reject(loginid);
+	}
 }

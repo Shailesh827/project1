@@ -3,7 +3,9 @@ package com.example.demo.entities;
 public class SellerRegister {
 
 	String username,password;
+	int status;
 	String firstname,lastname,email,address,phoneno,adharno;
+	String usertype;
 	public String getUsername() {
 		return username;
 	}
@@ -16,7 +18,12 @@ public class SellerRegister {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
 	public String getFirstname() {
 		return firstname;
 	}
@@ -53,6 +60,11 @@ public class SellerRegister {
 	public void setAdharno(String adharno) {
 		this.adharno = adharno;
 	}
-
+	public String getUsertype() {
+		return usertype;
+	}
+	public void setUsertype(String usertype) {
+		this.usertype = usertype;
+	}
 	
 }

@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
@@ -22,5 +24,20 @@ public class VeterinaryService {
 	public Veterinary saveVeterinary(Veterinary v)
 	{
 		return vrepo.save(v);
+	}
+	
+	public List <Veterinary> getAll()
+	{
+		return vrepo.findAll();
+	}
+	
+	public List<Veterinary> getVeterinaryWithStatus()
+	{
+		return vrepo.getVeterinarys();
+	}
+	
+	public Veterinary getVeterinaryWithid(int vetid)
+	{
+		return vrepo.getVeterinaryWithid(vetid);
 	}
 }

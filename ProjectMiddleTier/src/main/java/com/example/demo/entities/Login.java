@@ -72,7 +72,7 @@ public class Login {
 		this.usertypeid = usertypeid;
 	}
 
-	public int isStatus() {
+	public int getStatus() {
 		return status;
 	}
 
@@ -80,6 +80,18 @@ public class Login {
 		this.status = status;
 	}
 
+
+	public int getLoginid() {
+		return loginid;
+	}
+
+
+	public void setLoginid(int loginid) {
+		this.loginid = loginid;
+	}
+
+
+	
 	
 	
 	

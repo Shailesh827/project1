@@ -3,7 +3,8 @@ package com.example.demo.entities;
 public class TrainerRegister {
  
 	String username,password;
-	String fname, lname, regno, address, phoneno, description;
+	String fname, lname, regno, address, phone, description;
+	String usertype;
 	public String getUsername() {
 		return username;
 	}
@@ -40,11 +41,11 @@ public class TrainerRegister {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getPhoneno() {
-		return phoneno;
+	public String getPhone() {
+		return phone;
 	}
-	public void setPhoneno(String phoneno) {
-		this.phoneno = phoneno;
+	public void setPhoneno(String phone) {
+		this.phone = phone;
 	}
 	public String getDescription() {
 		return description;
@@ -52,7 +53,12 @@ public class TrainerRegister {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+	public String getUsertype() {
+		return usertype;
+	}
+	public void setUsertype(String usertype) {
+		this.usertype = usertype;
+	}
 	
 	
 }

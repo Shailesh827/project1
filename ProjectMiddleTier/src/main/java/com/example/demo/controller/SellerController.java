@@ -46,4 +46,13 @@ public class SellerController {
 		Seller s=new Seller(sr.getFirstname(),sr.getLastname(),sr.getEmail(),sr.getAddress(),sr.getPhoneno(),sr.getAdharno(),saved);
 	return sservice.saveSeller(s);
 	}
+	
+	@GetMapping("/getSellerWithId")
+	public Seller getSellerWithId(@RequestParam("sellerid")int sellerid)
+	{
+		return sservice.getById(sellerid);
+	}
+	
+	
+	
 }

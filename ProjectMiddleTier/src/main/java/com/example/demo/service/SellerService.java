@@ -22,4 +22,12 @@ public class SellerService {
 	{
 		return srepo.save(s);
 	}
+	
+	public Seller getById(int sellerid)
+	{
+		return srepo.findById(sellerid).get();
+	}
+	
+	
+	
 }

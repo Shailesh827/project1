@@ -20,23 +20,17 @@ public class Shelter {
 	@Column
 	String address;
 	@Column
-	String phoneno;
-	
-	
-	
+	String phone;
 	public Shelter() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	public Shelter(int shelterid, String sheltername, String address, String phoneno) {
+	public Shelter(String sheltername, String address, String phone) {
 		super();
-		this.shelterid = shelterid;
 		this.sheltername = sheltername;
 		this.address = address;
-		this.phoneno = phoneno;
+		this.phone = phone;
 	}
-
 	public int getShelterid() {
 		return shelterid;
 	}
@@ -55,12 +49,19 @@ public class Shelter {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getPhoneno() {
-		return phoneno;
+	public String getPhone() {
+		return phone;
 	}
-	public void setPhoneno(String phoneno) {
-		this.phoneno = phoneno;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
+	@Override
+	public String toString() {
+		return "Shelter [shelterid=" + shelterid + ", sheltername=" + sheltername + ", address=" + address + ", phone="
+				+ phone + "]";
+	}
+	
+	
 	
 	
 	

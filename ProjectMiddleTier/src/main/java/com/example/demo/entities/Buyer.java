@@ -18,7 +18,7 @@ public class Buyer {
 	int buyerid;
 	
 	@Column
-	String firstname,lastname,email,address,phoneno,adharno;
+	String firstname,lastname,email,address,phone,adharno;
 	
 	@OneToOne
 	@JoinColumn(name="loginid")
@@ -30,14 +30,14 @@ public class Buyer {
 	}
 	
 
-	public Buyer(String firstname, String lastname, String email, String address, String phoneno, String adharno,
+	public Buyer(String firstname, String lastname, String email, String address, String phone, String adharno,
 			Login loginid) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.email = email;
 		this.address = address;
-		this.phoneno = phoneno;
+		this.phone = phone;
 		this.adharno = adharno;
 		this.loginid = loginid;
 	}
@@ -83,12 +83,12 @@ public class Buyer {
 		this.address = address;
 	}
 
-	public String getPhoneno() {
-		return phoneno;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setPhoneno(String phoneno) {
-		this.phoneno = phoneno;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getAdharno() {

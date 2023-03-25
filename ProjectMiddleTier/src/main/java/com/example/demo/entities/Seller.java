@@ -16,7 +16,7 @@ public class Seller {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int sellerid;
-	@Column
+	
 	String firstname,lastname,email,address,phoneno,adharno;
 	
 	@OneToOne
@@ -102,6 +102,13 @@ public class Seller {
 
 	public void setLoginid(Login loginid) {
 		this.loginid = loginid;
+	}
+
+	@Override
+	public String toString() {
+		return "Seller [sellerid=" + sellerid + ", firstname=" + firstname + ", lastname=" + lastname + ", email="
+				+ email + ", address=" + address + ", phoneno=" + phoneno + ", adharno=" + adharno + ", loginid="
+				+ loginid + "]";
 	}
 	
 	

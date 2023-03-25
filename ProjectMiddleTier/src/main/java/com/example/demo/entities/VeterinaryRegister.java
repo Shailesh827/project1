@@ -3,7 +3,8 @@ package com.example.demo.entities;
 public class VeterinaryRegister {
   
 	String username,password;
-	String vetname, regno, hospitalname, qualification, phoneno, address;
+	String vetname, regno, hospitalname, phone, address,qualification;
+	String usertype;
 	public String getUsername() {
 		return username;
 	}
@@ -40,11 +41,11 @@ public class VeterinaryRegister {
 	public void setQualification(String qualification) {
 		this.qualification = qualification;
 	}
-	public String getPhoneno() {
-		return phoneno;
+	public String getPhone() {
+		return phone;
 	}
-	public void setPhoneno(String phoneno) {
-		this.phoneno = phoneno;
+	public void setPhone(String phoneno) {
+		this.phone = phoneno;
 	}
 	public String getAddress() {
 		return address;
@@ -52,7 +53,12 @@ public class VeterinaryRegister {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
+	public String getUsertype() {
+		return usertype;
+	}
+	public void setUsertype(String usertype) {
+		this.usertype = usertype;
+	}
 	
 	
 }
